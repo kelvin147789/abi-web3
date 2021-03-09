@@ -109,11 +109,16 @@ const App = () => {
 
   return (
     <div className="App">
-      {account}
+
+      <div>
+        FOR BSC Testnet:
+      </div>
+      Account:{account}
       <div>
 
       </div>
-      {MIGAddress}
+      Contract Address(if this not null means success):
+      <div></div>{MIGAddress}
 
     </div>
   );
