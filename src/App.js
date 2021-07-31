@@ -57,7 +57,7 @@ const App = () => {
       const contractData = await Migrations.networks[networkID];
       if (web3js && !deployed) {
         // To ensure the data is initalized to avoid undefined error
-        if (Migrations) {
+        if (!Migrations) {
           // *** It is where we would use ABI
           const migration = await new web3js.eth.Contract(Migrations.abi, contractData.address)
 
